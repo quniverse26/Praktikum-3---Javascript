@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title> A SIMPLE CALCULATOR BY QUEEN ANJAR </title>
+</head>
+<body>
+	<div class="content-wrapper">
+		<section class="content">
+			<div class="box box-warning box-solid">
+				<div class="box-header with-border">
+					<h2> A SIMPLE CALCULATOR BY QUEEN ANJAR </h2>
+				</div>
+
+	<table>
+		<tr>
+			<td width='200px'> Perhitungan
+				<input type="text" style="width: 20px" name="tambah" id="tambah" value="+"readonly placeholder="+">
+				<input type="text" style="width: 20px" name="kurang" id="kurang" value="-"readonly placeholder="-">
+				<input type="text" style="width: 20px" name="kali" id="kali" value="x"readonly placeholder="x">
+				<input type="text" style="width: 20px" name="bagi" id=":" value=":"readonly placeholder="+">
+			</td>
+			<td width='200px'>
+				<input type="text" style="width: 150px" onkeyup="perhitungan()" class="form-control" name="bilangan1" id="bilangan1" placeholder="Input Bilangan Pertama">
+			</td>
+			<td width='200'> <input type="text" style="width: 50px" class="form-control" name="perhitungannya" id="perhitungannya" readonly></td>
+			<td width='200px'>
+				<input type="text" style="width: 150px" onkeyup="perhitungan()" class="form-control" name="bilangan2" id="bilangan2" placeholder="Input Bilangan Kedua">
+			</td>
+			<td width='200px'>
+				<input type="text" style="width: 150px" onkeyup="perhitungan()" class="form-control" name="hasil" id="hasil" placeholder="Hasil Perhitungan">
+			</td>
+		</tr>
+	</table>
+			</div>
+		</section>
+	</div>
+
+	<script language="Javascript">
+		document.ready.function() {
+			var tambah = document.getElementById('tambah').value;
+			var kurang = document.getElementById('kurang').value;
+			var kali = document.getElementById('kali').value;
+			var bagi = document.getElementById('bagi').value;
+			"tambah".click.function() {
+				document.getElementById('perhitungannya').value = tambah;
+			};
+			"kurang".click.function() {
+				document.getElementById('perhitungannya').value = kurang;
+			};
+			"kali".click.function() {
+				document.getElementById('perhitungannya').value = kali;
+			};
+			"bagi".click.function() {
+				document.getElementById('perhitungannya').value = bagi;
+			};
+		};
+
+		function perhitungan() {
+			var perhitungannya = document.getElementById('perhitungannya').value;
+			var bilangan1 = document.getElementById('bilangan1').value;
+			var bilangan1 = document.getElementById('bilangan1').value;
+			tambah = bilangan1 + bilangan2;
+			kurang = bilangan1 - bilangan2;
+			kali = bilangan1 * bilangan2;
+			bagi = bilangan1 / bilangan2;
+			if (perhitungannya=="+") {
+				document.getElementById('hasil').value = tambahh;
+			}
+			else if (perhitungannya=="-") {
+				document.getElementById('hasil').value = kurangg;
+			}
+			else if (perhitungannya=="x") {
+				document.getElementById('hasil').value = kalii;
+			}
+			else {
+				document.getElementById('hasil').value = bagii;
+			}
+		}
+	</script>
+	<script language="Javascript">
+		<!--
+	document.write("Dimodifikasi terakhir pada "+document.lastModified);
+	//-->
+	</script>
+</body>
+</html>
